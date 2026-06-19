@@ -15,7 +15,8 @@
     body{
         background-color: #f0f0f0;
         color: #444;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         padding: 0;
         margin: 0;
         max-width: 100%;
@@ -108,7 +109,7 @@ footer a:hover::before{
     animation-duration: 3s;
 }
 </style>
-<body>
+<body class="flex flex-col min-h-screen">
     <header class="bg-linear-to-r from-teal-600 to-teal-800 w-full h-10 sm:mb-1 mb-[2.5%] flex justify-around items-center">
         <a href="" class="duration-700 hover:text-blue-200 size-7 hover:size-10"><img src="imagens/home-white.png" alt=""></a>
         <a href="" class="text-blue-300 duration-700 hover:text-blue-200 hover:text-[150%]">Sobre</a>
@@ -171,8 +172,13 @@ footer a:hover::before{
 
     </article>
           
-    <footer class="flex static bottom-0   bg-linear-to-r from-teal-600 to-teal-800 w-full items-center py-[0.5%]">
-        <p class="text-white">Criado por <a href="https://github.com/marcola501" data-type="marcos.augusto04demaio2009@gmail.com"></p><img class="h-10 rounded-full" src="imagens/marcos.jpeg" alt=""></a>
-    </footer>
+    <footer class="bottom-auto mb-0 inset-x-0  bg-linear-to-r from-teal-600 to-teal-800 w-full flex justify-center items-center py-[0.5%]">
+    <p class="text-white flex items-center gap-2">
+        Criado por 
+        <a href="https://github.com/marcola501" data-type="marcos.augusto04demaio2009@gmail.com">
+            <img class="h-10 rounded-full" src="imagens/marcos.jpeg" alt="Foto do Marcos">
+        </a>
+    </p>
+</footer>
 </body>
 </html>
